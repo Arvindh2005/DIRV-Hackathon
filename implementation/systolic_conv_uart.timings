@@ -1,0 +1,56 @@
+
+icetime topological timing analysis report
+==========================================
+
+Report for critical path:
+-------------------------
+
+        lc40_22_5_4 (LogicCell40) [clk] -> lcout: 1.491 ns
+     1.491 ns net_83291 (uart_inst.state[5])
+        odrv_22_5_83291_79591 (Odrv4) I -> O: 0.649 ns
+        t473 (Span4Mux_v1) I -> O: 0.344 ns
+        t472 (LocalMux) I -> O: 1.099 ns
+        inmux_20_4_79374_79450 (InMux) I -> O: 0.662 ns
+        lc40_20_4_7 (LogicCell40) in1 -> lcout: 1.232 ns
+     5.477 ns net_76046 (send_uart_SB_LUT4_I0_I2_SB_LUT4_O_I3[1])
+        odrv_20_4_76046_76188 (Odrv4) I -> O: 0.649 ns
+        t424 (Span4Mux_h0) I -> O: 0.252 ns
+        t423 (LocalMux) I -> O: 1.099 ns
+        inmux_23_4_90878_90902 (InMux) I -> O: 0.662 ns
+        t116 (CascadeMux) I -> O: 0.000 ns
+        lc40_23_4_0 (LogicCell40) in2 -> lcout: 1.205 ns
+     9.345 ns net_86995 (uart_inst.state_SB_DFFSR_Q_R_SB_LUT4_O_I3[2])
+        t475 (LocalMux) I -> O: 1.099 ns
+        inmux_22_3_86937_86983 (InMux) I -> O: 0.662 ns
+        lc40_22_3_6 (LogicCell40) in1 -> lcout: 1.232 ns
+    12.338 ns net_83047 (uart_inst.state_SB_DFFSR_Q_7_D_SB_LUT4_O_I3[1])
+        t458 (LocalMux) I -> O: 1.099 ns
+        inmux_21_2_82989_83012 (InMux) I -> O: 0.662 ns
+        t112 (CascadeMux) I -> O: 0.000 ns
+        lc40_21_2_3 (LogicCell40) in2 -> lcout: 1.205 ns
+    15.305 ns net_79054 (send_uart_SB_LUT4_I0_O[1])
+        t431 (LocalMux) I -> O: 1.099 ns
+        inmux_21_2_82962_83019 (InMux) I -> O: 0.662 ns
+        lc40_21_2_4 (LogicCell40) in3 -> lcout: 0.874 ns
+    17.940 ns net_79055 (uart_inst.buf_tx_SB_DFFE_Q_E)
+        odrv_21_2_79055_79089 (Odrv4) I -> O: 0.649 ns
+        t450 (Span4Mux_h4) I -> O: 0.543 ns
+        t449 (Span4Mux_v1) I -> O: 0.344 ns
+        t448 (LocalMux) I -> O: 1.099 ns
+        inmux_16_1_64299_64351 (CEMux) I -> O: 0.702 ns
+    21.278 ns net_64351 (uart_inst.buf_tx_SB_DFFE_Q_E)
+        lc40_16_1_4 (LogicCell40) ce [setup]: 0.000 ns
+    21.278 ns net_60403 (uart_inst.buf_tx[7])
+
+Resolvable net names on path:
+     1.491 ns ..  4.246 ns uart_inst.state[5]
+     5.477 ns ..  8.139 ns send_uart_SB_LUT4_I0_I2_SB_LUT4_O_I3[1]
+     9.345 ns .. 11.106 ns uart_inst.state_SB_DFFSR_Q_R_SB_LUT4_O_I3[2]
+    12.338 ns .. 14.099 ns uart_inst.state_SB_DFFSR_Q_7_D_SB_LUT4_O_I3[1]
+    15.305 ns .. 17.066 ns send_uart_SB_LUT4_I0_O[1]
+    17.940 ns .. 21.278 ns uart_inst.buf_tx_SB_DFFE_Q_E
+                  lcout -> uart_inst.buf_tx[7]
+
+Total number of logic levels: 6
+Total path delay: 21.28 ns (47.00 MHz)
+
