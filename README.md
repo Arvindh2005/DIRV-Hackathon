@@ -24,7 +24,9 @@
 
 ### RISC-V Simulation Using QEMU
 - The implementation is first validated through **QEMU-based RISC-V simulation** before deploying it on the FPGA.  
-- This allows for **faster debugging and performance analysis** without requiring direct hardware access.  
+- This allows for **faster debugging and performance analysis** without requiring direct hardware access.
+
+  The below figure shows the simulated output:
 
 
 ![WhatsApp Image 2025-02-28 at 22 26 58](https://github.com/user-attachments/assets/7d69d1fc-ec02-4234-9ead-e05e81bb4dc9)
